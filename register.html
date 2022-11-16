@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Pet Salon | Register </title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+      </ul>
+
+    <h1>The Fashion Pet</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae voluptas eos, atque quod dignissimos, tempora ratione iusto modi voluptatum minima. Dolor suscipit voluptas iure quos ipsa in. Impedit, earum.</p>
+    
+    <main>
+      <!--create the form with the inputs for the next fields:  name, age, gender, brered, service, owner, contact--<-->
+
+        <div class="container">
+          <h2>Add a new pet</h2>
+          <input class = "form-control" type = "text" id="txtName" placeholder="Enter pet's name *">
+          <input class = "form-control" type = "number" id="txtAge" placeholder="Enter pet's age">
+          <input class="form-control" type = "text" id="txtGender" placeholder="Enter pet's gender">
+          <input class = "form-control" type = "text" id="txtBreed" placeholder="Enter pet's breed">
+          <select class = "form-select" id="selService">
+            <option value="" selected disabled>--Select a service -- *</option>
+            <option value ="nails">💅Nails cut</option>
+            <option value ="vaccines">💉Vaccines</option>
+            <option value = "grooming">✂️Grooming</option>
+          </select>
+          <input class="form-control" type = "text" id="txtOwner" placeholder="Enter pet owner's name *">
+          <input class="form-control" type = "tel" id="txtPhone" placeholder="Enter your contact phone *">
+          <!--New attribute-->
+          <select class = "form-select" id="selPayment">
+            <option value="" selected disabled>--Select a payment method -- *</option>
+            <option value ="paypal">Paypal</option>
+            <option value ="venmo">Venmo</option>
+            <option value = "zelle">Zelle</option>
+          </select>
+          <!---->
+          <button class= "btn btn-primary" onclick = "register();">Register</button>
+        </div>
+
+        <div id="pets">
+          <!--the pets will be displayed here-->
+        </div>
+
+        <div class="container" >
+
+          <!-- <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Breed</th>
+                <th scope="col">Service</th> 
+                <th scope="col">Owner Name</th>
+                <th scope="col">Contact Phone</th>
+              </tr>
+            </thead>
+            <tbody id="pets-table">
+    
+            </tbody>
+          </table> -->
+
+
+
+          <!--hopefully the pet table is displayed here-->
+        </div>
+
+    </main>
+    <footer>
+      <p id="petsalon-info"></p>
+    </footer>
+    <script src="scripts/display.js"></script>
+    <script src="scripts/register.js"></script>
+
+</body>
+</html>
