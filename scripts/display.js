@@ -6,9 +6,9 @@ function displayCards(){
         //create the HTML tmp for card
 
         card+=`
-        <div class="card my-card">
+        <div class="card my-card" div id="${pet.id}">
             <div class="card-body">
-            <div id="${pet.id}" class="pet">
+            <div class="pet">
                 <h6 class="card-title">${pet.name}</h6
                 <p class="card-text"> Age: ${pet.age}</p>
                 <p class="card-text"> Gender: ${pet.gender}</p>
